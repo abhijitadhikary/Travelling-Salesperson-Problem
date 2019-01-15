@@ -53,8 +53,6 @@ public class TSP {
     private static long endTime;
     private static long totalTime;
     
-    // dp variables
-    //private static ArrayList<Integer> optimalRoute = new ArrayList<>();
     private static double optimalDistance = Double.POSITIVE_INFINITY;
 
     public static void main(String[] args) {
@@ -80,13 +78,13 @@ public class TSP {
     	processInputData();
         
         // function call to print the data
-    	//printData();
+    	printData();
     	
     	// builds the distance matrix (city to city distance, with main diagonal as 0s)
     	buildDistanceMatrix();
     	
         // prints the distance matrix
-        //printDistanceMatrix();
+        printDistanceMatrix();
         
         // set all the elements of "visited" array to false
         setAllToUnvisited();
@@ -98,7 +96,7 @@ public class TSP {
         twoOptOptimizer();
         
         // runs the dynamic programming algorithm
-        //dynamicProtrammingAlgorithm();
+        dynamicProtrammingAlgorithm();
 
     }
     
